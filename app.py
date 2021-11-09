@@ -3,11 +3,11 @@ import sys
 
 from flask import Flask, render_template
 
-app = Flask(__name__, static_url_path='/templates')
+app = Flask(__name__, static_url_path='/static')
 
-@app.route('/')
-def root():
-    return render_template('index.html')
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 if __name__ == '__main__':
     port = int(os.getenv("PORT", 8080))
