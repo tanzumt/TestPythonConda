@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def index():
-    return render_template("/templates/index.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     port = int(os.getenv("PORT", 8080))
