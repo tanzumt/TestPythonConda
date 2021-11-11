@@ -1,5 +1,5 @@
 dependencies:
-- python=2.7
+- python=3.8
 - flask
 - jsonschema
-- click=7.1
+- click
